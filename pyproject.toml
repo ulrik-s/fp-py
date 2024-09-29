@@ -17,9 +17,11 @@ classifiers = [
     "Operating System :: OS Independent"
 ]
 dependencies = [
+    "black>=24.8.0",
     "click>=8.1.7",
     "concurrent-log-handler>=0.9.25",
     "expression>=5.2.0",
+    "flake8>=7.1.1",
     "mpfhandler>=0.0.1",
     "pydantic>=2.9.1",
     "pytest>=8.3.3",

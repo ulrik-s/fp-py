@@ -25,13 +25,12 @@ def log_file_namer(logger_name: str) -> str:
 
 
 def log_file_base_name() -> str:
-  pass
+    pass
 
 
 def create_log_folder():
-  if not os.path.exists("logs"):
-    os.makedirs("logs")
-
+    if not os.path.exists("logs"):
+        os.makedirs("logs")
 
 
 def my_program():
@@ -60,6 +59,7 @@ def my_program():
 def cli():
     pass
 
+
 @cli.command()
 def update():
     """Update the CLI tool to the latest version using 'uv'."""
@@ -70,15 +70,18 @@ def update():
         click.echo("Failed to update the CLI tool using 'uv'.")
         click.echo(e)
 
+
 # Other commands...
+
 
 @cli.command()
 def pr():
-  print("Hello World")
+    print("Hello World")
 
 
 def main():
-  cli()
+    cli()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     cli()
