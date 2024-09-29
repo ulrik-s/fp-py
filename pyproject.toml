@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fp-py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name="Ulrik Sjölin", email="ulrik.sjolin@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "click>=8.1.7",
+    "concurrent-log-handler>=0.9.25",
+    "expression>=5.2.0",
+    "mpfhandler>=0.0.1",
+    "pydantic>=2.9.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/your_cli_tool"
+
+[project.scripts]
+fp-py = "fp_py.cli:main"
