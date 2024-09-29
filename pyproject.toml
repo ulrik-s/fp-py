@@ -22,6 +22,7 @@ dependencies = [
     "expression>=5.2.0",
     "mpfhandler>=0.0.1",
     "pydantic>=2.9.1",
+    "pytest>=8.3.3",
 ]
 
 [project.urls]
